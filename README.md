@@ -23,7 +23,7 @@ Development menggunakan Mac OS
 
 ## Keterangan
 
-Susunan dataset
+**Susunan dataset**
 
 ```text
 dataset/
@@ -34,15 +34,16 @@ dataset/
     ├── mask/
     └── no_mask/
 
-```        
+```   
+Dataset berisi kumpulan folder nama orang, setiap folder nama orang berisi dua folder yaitu mask dan no_mask, yang menandakan foto tersebut ditujukan untuk seseorang yang menggunakan masker, dan tidak menggunakan masker
         
-Direktori dataset
+**Direktori Dataset**
 ```python
 path = "./dataset"
 ```
 Ubah lokasi sesuai dengan posisi dataset yang akan digunakan
 
-Split data
+**Split Data**
 ```python
 sss = StratifiedShuffleSplit(n_splits=1, test_size=0.5, random_state=0)
 ```
